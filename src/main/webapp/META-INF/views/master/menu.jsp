@@ -22,8 +22,8 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-Pablo" action="https://www.youtube.com/watch?v=tVuvTKMpDcM"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-Gabriel" action="https://www.github.com/"/>
-      <acme:menu-suboption code="master.menu.anonymous.favourite.antonioV" action="https://www.chess.com"/>
-      <acme:menu-suboption code="master.menu.anonymous.favourite-link-Thibaut" action="https://i.imgflip.com/48cc3w.jpg"/>
+      		<acme:menu-suboption code="master.menu.anonymous.favourite.antonioV" action="https://www.chess.com"/>
+      		<acme:menu-suboption code="master.menu.anonymous.favourite-link-Thibaut" action="https://i.imgflip.com/48cc3w.jpg"/>
 			
 			<acme:menu-suboption code="master.menu.anonymous.francoBulletin-list" action="/anonymous/franco-bulletin/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.francoBulletin-create" action="/anonymous/franco-bulletin/create"/>
@@ -31,8 +31,6 @@
 			<acme:menu-suboption code="master.menu.anonymous.gutierrezBulletin-list" action="/anonymous/gutierrez-bulletin/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.gutierrezBulletin-create" action="/anonymous/gutierrez-bulletin/create"/>
 
-			<acme:menu-suboption code="master.menu.anonymous.francoBulletin-list" action="/anonymous/franco-bulletin/list"/>
-			<acme:menu-suboption code="master.menu.anonymous.francoBulletin-create" action="/anonymous/franco-bulletin/create"/>
 		
 			<acme:menu-suboption code="master.menu.anonymous.vidalBulletin.list" action="/anonymous/vidal-bulletin/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.vidalBulletin.form" action="/anonymous/vidal-bulletin/create"/>
