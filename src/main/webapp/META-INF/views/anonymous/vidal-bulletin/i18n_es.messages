@@ -1,0 +1,18 @@
+#LIST
+anonymous.vidalBulletin.list.label.type = Tipo
+anonymous.vidalBulletin.list.label.title = Titulo
+anonymous.vidalBulletin.list.label.author = Autor
+anonymous.vidalBulletin.list.label.text = Texto
+
+#FORM CREATE
+anonymous.vidalBulletin.form.label.type = Tipo
+anonymous.vidalBulletin.form.label.type.forReal = De Verdad
+anonymous.vidalBulletin.form.label.type.bigNews = Grandes Noticias
+anonymous.vidalBulletin.form.label.type.joke = Broma
+
+anonymous.vidalBulletin.form.label.title = Titulo
+anonymous.vidalBulletin.form.label.author = Autor
+anonymous.vidalBulletin.form.label.text = Texto
+
+anonymous.vidalBulletin.form.button.create = Crear
+anonymous.vidalBulletin.form.button.return = Volver

@@ -1,0 +1,8 @@
+anonymous.lopez-bulletin.form.label.author = Author:
+anonymous.lopez-bulletin.form.label.text = Text:
+anonymous.lopez-bulletin.form.button.create = Create
+anonymous.lopez-bulletin.form.button.return = Return
+
+anonymous.lopez-bulletin.list.label.moment = Moment
+anonymous.lopez-bulletin.list.label.author = Author
+anonymous.lopez-bulletin.list.label.text = Text

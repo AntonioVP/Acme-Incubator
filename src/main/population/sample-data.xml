@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+- sample-data.xml
+-
+- Copyright (c) 2019 Rafael Corchuelo.
+-
+- In keeping with the traditional purpose of furthering education and research, it is
+- the policy of the copyright owner to permit non-commercial use and redistribution of
+- this software. It has been tested carefully, but it is not guaranteed for any particular
+- purposes.  The copyright owner does not offer any warranties or representations, nor do
+- they accept any liabilities with respect to them.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="conversion-service.xml" />
+	
+		<bean id="francoBulletin01" class="acme.entities.francoBulletin.FrancoBulletin">
+			<property name="title" value="Sample francoBulletin 01" />
+			<property name="text" value="This is the description of a sample francoBulletin" />
+		</bean>
+		
+		<bean id="francoBulletin02" class="acme.entities.francoBulletin.FrancoBulletin">
+			<property name="title" value="Sample francoBulletin 02" />
+			<property name="text" value="This is the description of a sample francoBulletin" />
+		</bean>
+		
+		<bean id="francoBulletin03" class="acme.entities.francoBulletin.FrancoBulletin">
+			<property name="title" value="Sample francoBulletin 03" />
+			<property name="text"><null/></property>
+		</bean>
+
+		<bean id="gutierrezBulletin01" class="acme.entities.gutierrezBulletin.GutierrezBulletin">
+		<property name="name" value="Sample gutierrezBulletin 01" />
+		<property name="advertise" value="This is the description of a sample gutierrezBulletin" />
+		</bean>
+		
+		<bean id="gutierrezBulletin02" class="acme.entities.gutierrezBulletin.GutierrezBulletin">
+		<property name="name" value="Sample gutierrezBulletin 02" />
+		<property name="advertise" value="This is the description of a sample gutierrezBulletin" />
+		</bean>
+		
+		<bean id="gutierrezBulletin03" class="acme.entities.gutierrezBulletin.GutierrezBulletin">
+		<property name="name" value="Sample gutierrezBulletin 03" />
+		<property name="advertise"><null/></property>
+		</bean>	
+	
+	<!-- Vidal Bulletin -->
+	
+	<bean id="vidalBulletin01" class="acme.entities.vidalBulletins.VidalBulletin">
+		<property name="type" value="BigNews" />
+		<property name="title" value="Increible alumno encuentra Leslie!" />
+		<property name="author" value="El" />
+		<property name="text" value="I'm happy!" />
+	</bean>
+	
+	<bean id="vidalBulletin02" class="acme.entities.vidalBulletins.VidalBulletin">
+		<property name="type" value="Joke" />
+		<property name="title" value="Leslie descubre la formula para aprobar" />
+		<property name="author" value="Increible"/>
+		<property name="text" value="Al parecer NO estaba en lo cierto y conduce al fracaso." />
+	</bean>
+	
+	<bean id="vidalBulletin03" class="acme.entities.vidalBulletins.VidalBulletin">
+		<property name="type" value="ForReal" />
+		<property name="title" value="Leslie al descubierto" />
+		<property name="author" value="Reportero" />
+		<property name="text" value="La realidad es que Leslie lo que quiere es vaguear." />
+	</bean>
+  
+  <!-- ThibautBulletin -->
+	
+	<bean id="lopezBulletin01" class="acme.entities.lopezBulletin.LopezBulletin">
+		<property name="author" value="Jotaro"/>
+		<property name="text" value="Yare Yare Daze"/>
+		<property name="moment" value="1987/07/15 17:00"/>
+	</bean>
+	
+	<bean id="lopezBulletin02" class="acme.entities.lopezBulletin.LopezBulletin">
+		<property name="author" value="Dio"/>
+		<property name="text" value="I reject my humanity Jojo"/>
+		<property name="moment" value="1888/07/15 17:00"/>
+	</bean>
+	
+	<bean id="lopezBulletin03" class="acme.entities.lopezBulletin.LopezBulletin">
+		<property name="author" value="Joseph"/>
+		<property name="text" value="You're next line line will be: Nani?!"/>
+		<property name="moment" value="1938/07/15 17:00"/>
+	</bean>
+
+</beans>
