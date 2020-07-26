@@ -33,6 +33,8 @@
 
     drop table if exists `lopez_bulletin`;
 
+    drop table if exists `notice`;
+
     drop table if exists `provider`;
 
     drop table if exists `user_account`;
