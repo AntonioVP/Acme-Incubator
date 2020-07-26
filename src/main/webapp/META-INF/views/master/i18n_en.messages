@@ -47,10 +47,13 @@ master.menu.anonymous.vidalBulletin.form = Create VidalBulletin
 master.menu.anonymous.lopezBulletin-list = List LopezBulletin
 master.menu.anonymous.lopezBulletin-create = Create LopezBulletin
 
+master.menu.anonymous.notice-list = List notices
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
+master.menu.administrator.notice-list = List notices
 master.menu.administrator.shutdown = Shut down
 
 # master.menu.provider ########################################################
@@ -71,6 +74,7 @@ master.menu.user-account.provider = Provider data
 master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
+master.menu.user-account.notice-list = List notices
 
 # master.footer ###############################################################
 
