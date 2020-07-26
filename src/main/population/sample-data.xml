@@ -17,35 +17,39 @@
 
 	<import resource="conversion-service.xml" />
 	
-		<bean id="francoBulletin01" class="acme.entities.francoBulletin.FrancoBulletin">
-			<property name="title" value="Sample francoBulletin 01" />
-			<property name="text" value="This is the description of a sample francoBulletin" />
-		</bean>
+	<!-- Franco Bulletin -->
+	
+	<bean id="francoBulletin01" class="acme.entities.francoBulletin.FrancoBulletin">
+		<property name="title" value="Sample francoBulletin 01" />
+		<property name="text" value="This is the description of a sample francoBulletin" />
+	</bean>
+	
+	<bean id="francoBulletin02" class="acme.entities.francoBulletin.FrancoBulletin">
+		<property name="title" value="Sample francoBulletin 02" />
+		<property name="text" value="This is the description of a sample francoBulletin" />
+	</bean>
 		
-		<bean id="francoBulletin02" class="acme.entities.francoBulletin.FrancoBulletin">
-			<property name="title" value="Sample francoBulletin 02" />
-			<property name="text" value="This is the description of a sample francoBulletin" />
-		</bean>
-		
-		<bean id="francoBulletin03" class="acme.entities.francoBulletin.FrancoBulletin">
-			<property name="title" value="Sample francoBulletin 03" />
-			<property name="text"><null/></property>
-		</bean>
-
-		<bean id="gutierrezBulletin01" class="acme.entities.gutierrezBulletin.GutierrezBulletin">
+	<bean id="francoBulletin03" class="acme.entities.francoBulletin.FrancoBulletin">
+		<property name="title" value="Sample francoBulletin 03" />
+		<property name="text"><null/></property>
+	</bean>
+	
+	<!-- Gutierrez Bulletin -->
+	
+	<bean id="gutierrezBulletin01" class="acme.entities.gutierrezBulletin.GutierrezBulletin">
 		<property name="name" value="Sample gutierrezBulletin 01" />
 		<property name="advertise" value="This is the description of a sample gutierrezBulletin" />
-		</bean>
+	</bean>
 		
-		<bean id="gutierrezBulletin02" class="acme.entities.gutierrezBulletin.GutierrezBulletin">
+	<bean id="gutierrezBulletin02" class="acme.entities.gutierrezBulletin.GutierrezBulletin">
 		<property name="name" value="Sample gutierrezBulletin 02" />
 		<property name="advertise" value="This is the description of a sample gutierrezBulletin" />
-		</bean>
+	</bean>
 		
-		<bean id="gutierrezBulletin03" class="acme.entities.gutierrezBulletin.GutierrezBulletin">
+	<bean id="gutierrezBulletin03" class="acme.entities.gutierrezBulletin.GutierrezBulletin">
 		<property name="name" value="Sample gutierrezBulletin 03" />
 		<property name="advertise"><null/></property>
-		</bean>	
+	</bean>	
 	
 	<!-- Vidal Bulletin -->
 	
@@ -88,6 +92,34 @@
 		<property name="author" value="Joseph"/>
 		<property name="text" value="You're next line line will be: Nani?!"/>
 		<property name="moment" value="1938/07/15 17:00"/>
+	</bean>
+	
+	<!-- Notice -->
+	
+	<bean id="notice01" class="acme.entities.notice.Notice">
+		<property name="picture" value="urlPicture01"/>
+		<property name="title" value="title01"/>
+		<property name="creation" value="1987/07/15 17:00"/>
+		<property name="deadline" value="2050/07/15 17:00"/>
+		<property name="body" value="body01"/>
+	</bean>
+	
+	<bean id="notice02" class="acme.entities.notice.Notice">
+		<property name="picture" value="urlPicture02"/>
+		<property name="title" value="title02"/>
+		<property name="creation" value="1987/07/15 17:00"/>
+		<property name="deadline" value="2050/07/15 17:00"/>
+		<property name="body" value="body02"/>
+		<property name="link" value="link02"/>
+	</bean>
+	
+	<bean id="notice03" class="acme.entities.notice.Notice">
+		<property name="picture" value="urlPicture03"/>
+		<property name="title" value="title03"/>
+		<property name="creation" value="1987/07/15 17:00"/>
+		<property name="deadline" value="2001/07/15 17:00"/>
+		<property name="body" value="body03"/>
+		<property name="link" value="link03"/>
 	</bean>
 
 </beans>
