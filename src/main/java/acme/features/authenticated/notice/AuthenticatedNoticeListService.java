@@ -47,8 +47,8 @@ public class AuthenticatedNoticeListService implements AbstractListService<Authe
 		Collection<Notice> result;
 		result = this.repository.findAllNotice();
 
-		result.stream().filter(x -> x.getDeadline().after(new Date(System.currentTimeMillis()))).collect(Collectors.toList());
+		Collection<Notice> actives = result.stream().filter(x -> x.getDeadline().after(new Date(System.currentTimeMillis()))).collect(Collectors.toList());
 
-		return result;
+		return actives;
 	}
 }
