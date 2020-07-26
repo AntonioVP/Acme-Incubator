@@ -320,7 +320,8 @@ LopezBulletin
       <w>407</w>
       <h>110</h>
     </coordinates>
-    <panel_attributes>VidalBulletin
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+VidalBulletin
 --
 + type: String {NotBlanck, Pattern(BigNews|Joke|ForReal)}
 + title: String {NotBlank}
@@ -373,6 +374,26 @@ Notice
 + deadline: Date {Temporal(TIMESTAMP)}
 + body: String {NotBlank}
 + link: String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>672</x>
+      <y>378</y>
+      <w>175</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Inquiry
+--
++ title: String {NotBlank}
++ creation: Date {NotNull}
++ deadline: Date {NotNull}
++ description: String {NotBlank}
++ minMoney: Money {Valid, NotNull}
++ maxMoney: Money {Valid, NotNull}
++ email: String {Email, NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

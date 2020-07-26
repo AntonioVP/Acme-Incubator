@@ -93,7 +93,39 @@
 		<property name="text" value="You're next line line will be: Nani?!"/>
 		<property name="moment" value="1938/07/15 17:00"/>
 	</bean>
+
+	<!-- Inquiry -->
 	
+	<bean id="inquiry01" class="acme.entities.inquiries.Inquiry">
+		<property name="title" value="Naturaleza de Leslie" />
+		<property name="creation" value="2020/01/01 11:00" />
+		<property name="deadline" value="2021/01/01 11:00" />
+		<property name="description" value="Ser con unas caracteristicas particulares se mantiene oculto." />
+		<property name="minMoney" value="300€" />
+		<property name="maxMoney" value="800€" />
+		<property name="email" value="drLesly@unique.com" />
+	</bean>
+	
+	<bean id="inquiry02" class="acme.entities.inquiries.Inquiry">
+		<property name="title" value="Vida extraterrestre" />
+		<property name="creation" value="2020/01/01 11:00" />
+		<property name="deadline" value="2021/01/01 11:00" />
+		<property name="description" value="Ser con unas caracteristicas particulares se mantiene oculto. Casualidad?" />
+		<property name="minMoney" value="400€" />
+		<property name="maxMoney" value="500€" />
+		<property name="email" value="drLesly@second.com" />
+	</bean>
+	
+	<bean id="inquiry03" class="acme.entities.inquiries.Inquiry">
+		<property name="title" value="Vida terrestre" />
+		<property name="creation" value="2020/01/01 11:00" />
+		<property name="deadline" value="2021/05/01 11:00" />
+		<property name="description" value="Ser con unas caracteristicas particulares no se mantiene oculto." />
+		<property name="minMoney" value="100€" />
+		<property name="maxMoney" value="750€" />
+		<property name="email" value="other_doctor@doctor.com" />
+	</bean>
+
 	<!-- Notice -->
 	
 	<bean id="notice01" class="acme.entities.notice.Notice">
