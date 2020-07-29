@@ -119,7 +119,7 @@
 	<bean id="inquiry03" class="acme.entities.inquiries.Inquiry">
 		<property name="title" value="Vida terrestre" />
 		<property name="creation" value="2020/01/01 11:00" />
-		<property name="deadline" value="2021/05/01 11:00" />
+		<property name="deadline" value="2020/05/01 11:00" />
 		<property name="description" value="Ser con unas caracteristicas particulares no se mantiene oculto." />
 		<property name="minMoney" value="100€" />
 		<property name="maxMoney" value="750€" />

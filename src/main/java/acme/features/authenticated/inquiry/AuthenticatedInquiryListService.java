@@ -2,6 +2,7 @@
 package acme.features.authenticated.inquiry;
 
 import java.util.Collection;
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -44,8 +45,9 @@ public class AuthenticatedInquiryListService implements AbstractListService<Auth
 		assert request != null;
 
 		Collection<Inquiry> result;
+		Date ahora = new Date(System.currentTimeMillis());
 
-		result = this.repository.findMany();
+		result = this.repository.findActive(ahora);
 
 		return result;
 	}
