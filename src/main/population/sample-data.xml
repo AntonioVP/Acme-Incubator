@@ -153,5 +153,43 @@
 		<property name="body" value="body03"/>
 		<property name="link" value="link03"/>
 	</bean>
-
+	
+	
+	<!-- Challenge -->
+	
+	<bean id="challenge01" class="acme.entities.challenges.Challenge">
+		<property name="description" value="Description of Challenge 01"/>
+		<property name="title" value="Challenge 01"/>
+		<property name="deadline" value="2029/07/15 17:00"/>
+		<property name="rewardExpert" value="1000€"/>
+		<property name="rewardAverage" value="750€"/>
+		<property name="rewardRookie" value="500€"/>
+	</bean>
+	
+	<bean id="challenge02" class="acme.entities.challenges.Challenge">
+		<property name="description" value="Description of Challenge 02"/>
+		<property name="title" value="Challenge 02"/>
+		<property name="deadline" value="2021/07/5 10:00"/>
+		<property name="rewardExpert" value="2000€"/>
+		<property name="rewardAverage" value="1000€"/>
+		<property name="rewardRookie" value="500€"/>
+	</bean>
+	
+	<bean id="challenge03" class="acme.entities.challenges.Challenge">
+		<property name="description" value="Description of Challenge 03"/>
+		<property name="title" value="Challenge 03"/>
+		<property name="deadline" value="2021/07/20 13:00"/>
+		<property name="rewardExpert" value="500€"/>
+		<property name="rewardAverage" value="200€"/>
+		<property name="rewardRookie" value="100€"/>
+	</bean>
+	
+	<bean id="challenge04" class="acme.entities.challenges.Challenge">
+		<property name="description" value="Description of Challenge 04"/>
+		<property name="title" value="Challenge 04"/>
+		<property name="deadline" value="2015/07/20 13:00"/>
+		<property name="rewardExpert" value="888€"/>
+		<property name="rewardAverage" value="777€"/>
+		<property name="rewardRookie" value="666€"/>
+	</bean>
 </beans>
