@@ -125,6 +125,38 @@
 		<property name="maxMoney" value="750€" />
 		<property name="email" value="other_doctor@doctor.com" />
 	</bean>
+	
+	<!-- Overture -->
+	
+	<bean id="overture01" class="acme.entities.overture.Overture">
+		<property name="title" value="title01" />
+		<property name="creation" value="2020/01/01 11:00" />
+		<property name="deadline" value="2021/01/01 11:00" />
+		<property name="description" value="description01" />
+		<property name="minMoney" value="300€" />
+		<property name="maxMoney" value="800€" />
+		<property name="email" value="01@gmail.com" />
+	</bean>
+	
+	<bean id="overture02" class="acme.entities.overture.Overture">
+		<property name="title" value="title02" />
+		<property name="creation" value="2020/01/01 11:00" />
+		<property name="deadline" value="2022/01/01 11:00" />
+		<property name="description" value="description02" />
+		<property name="minMoney" value="400€" />
+		<property name="maxMoney" value="500€" />
+		<property name="email" value="02@gmail.com" />
+	</bean>
+	
+	<bean id="overture03" class="acme.entities.overture.Overture">
+		<property name="title" value="title03" />
+		<property name="creation" value="2000/01/01 11:00" />
+		<property name="deadline" value="2015/05/01 11:00" />
+		<property name="description" value="description03" />
+		<property name="minMoney" value="100€" />
+		<property name="maxMoney" value="750€" />
+		<property name="email" value="03@gmail.com" />
+	</bean>
 
 	<!-- Notice -->
 	
