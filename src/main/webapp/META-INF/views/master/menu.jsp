@@ -18,7 +18,7 @@
 
 <acme:menu-bar code="master.menu.home">
 	
-	<!-- Parte izquierda del menú -->
+	<!-- Parte izquierda del menï¿½ -->
 	<acme:menu-left>
 		
 		<!-- Cosas de Anonymous -->
@@ -55,14 +55,16 @@
 			<acme:menu-suboption code="master.menu.anonymous.lopezBulletin-create" action="/anonymous/lopez-bulletin/create"/>
 
 		</acme:menu-option>
-		
-		<!-- Cosas de Authenticado -->
-		<acme:menu-option code="master.menu.authenticado" access="isAuthenticated()">
-			<acme:menu-suboption code="master.menu.authenticated.inquiry" action="/authenticated/inquiry/list"/>
-			
+
+		<!-- MENU AUTHENTICATED -->
+		<acme:menu-option code="master.menu.authenticated" access="hasRole('Authenticated')">
+			<acme:menu-suboption code="master.menu.authenticated.challenge" action="/authenticated/challenge/list"/>
+      <acme:menu-suboption code="master.menu.authenticated.inquiry" action="/authenticated/inquiry/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.notice-list" action="/authenticated/notice/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.overture-list" action="/authenticated/overture/list"/>
 		</acme:menu-option>
-		
-		<!-- Cosas de Admin -->
+
+    <!-- MENU ADMIN -->
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-separator/>
@@ -81,7 +83,7 @@
 		</acme:menu-option>
 	</acme:menu-left>
 
-	<!-- Parte derecha del menú -->
+	<!-- Parte derecha del menï¿½ -->
 	<acme:menu-right>
 		<acme:menu-option code="master.menu.sign-up" action="/anonymous/user-account/create" access="isAnonymous()"/>
 		<acme:menu-option code="master.menu.sign-in" action="/master/sign-in" access="isAnonymous()"/>
@@ -94,8 +96,6 @@
 			<acme:menu-suboption code="master.menu.user-account.provider" action="/authenticated/provider/update" access="hasRole('Provider')"/>
 			<acme:menu-suboption code="master.menu.user-account.become-consumer" action="/authenticated/consumer/create" access="!hasRole('Consumer')"/>
 			<acme:menu-suboption code="master.menu.user-account.consumer" action="/authenticated/consumer/update" access="hasRole('Consumer')"/>
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.administrator.notice-list" action="/administrator/notice/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>

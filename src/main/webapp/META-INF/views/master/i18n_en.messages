@@ -49,11 +49,12 @@ master.menu.anonymous.lopezBulletin-create = Create LopezBulletin
 
 master.menu.anonymous.notice-list = List notices
 
-# master.menu.authenticado ####################################################
-
-master.menu.authenticado = Authenticated
+# master.menu.authenticated ###################################################
+master.menu.authenticated = Authenticated
 
 master.menu.authenticated.inquiry = List Inquiries
+master.menu.authenticated.challenge = Challenge
+
 
 # master.menu.administrator ###################################################
 
@@ -80,7 +81,8 @@ master.menu.user-account.provider = Provider data
 master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
-master.menu.user-account.notice-list = List notices
+master.menu.authenticated.notice-list = List notices
+master.menu.authenticated.overture-list = List overtures
 
 # master.footer ###############################################################
 

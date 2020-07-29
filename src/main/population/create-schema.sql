@@ -20,6 +20,21 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `challenge` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `reward_average_amount` double precision,
+        `reward_average_currency` varchar(255),
+        `reward_expert_amount` double precision,
+        `reward_expert_currency` varchar(255),
+        `reward_rookie_amount` double precision,
+        `reward_rookie_currency` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `consumer` (
        `id` integer not null,
         `version` integer not null,
@@ -45,6 +60,21 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `inquiry` (
+       `id` integer not null,
+        `version` integer not null,
+        `creation` datetime(6),
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `email` varchar(255),
+        `max_money_amount` double precision,
+        `max_money_currency` varchar(255),
+        `min_money_amount` double precision,
+        `min_money_currency` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `lopez_bulletin` (
        `id` integer not null,
         `version` integer not null,
@@ -62,6 +92,21 @@
         `deadline` datetime(6),
         `link` varchar(255),
         `picture` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `overture` (
+       `id` integer not null,
+        `version` integer not null,
+        `creation` datetime(6),
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `email` varchar(255),
+        `max_money_amount` double precision,
+        `max_money_currency` varchar(255),
+        `min_money_amount` double precision,
+        `min_money_currency` varchar(255),
         `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
@@ -102,6 +147,9 @@
     ) engine=InnoDB;
 
     insert into `hibernate_sequence` values ( 1 );
+
+    alter table `challenge` 
+       add constraint UK_iad1tveqdje0x67b8rffd3cg3 unique (`title`);
 
     alter table `franco_bulletin` 
        add constraint UK_p7r8nwa3rfmuy3ix0n4lgpt99 unique (`title`);
