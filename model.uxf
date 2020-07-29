@@ -318,7 +318,7 @@ LopezBulletin
       <x>264</x>
       <y>418</y>
       <w>407</w>
-      <h>110</h>
+      <h>121</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 VidalBulletin
@@ -335,9 +335,10 @@ VidalBulletin
       <x>264</x>
       <y>550</y>
       <w>198</w>
-      <h>66</h>
+      <h>88</h>
     </coordinates>
-    <panel_attributes>FrancoBulletin
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+FrancoBulletin
 --
 + title: String {NotBlank}
 + text: String </panel_attributes>
@@ -349,9 +350,10 @@ VidalBulletin
       <x>473</x>
       <y>550</y>
       <w>198</w>
-      <h>66</h>
+      <h>88</h>
     </coordinates>
-    <panel_attributes>GutierrezBulletin
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+GutierrezBulletin
 --
 + name: String {NotBlank}
 + advertise: String </panel_attributes>
@@ -379,10 +381,10 @@ Notice
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>672</x>
-      <y>378</y>
-      <w>175</w>
-      <h>112</h>
+      <x>121</x>
+      <y>649</y>
+      <w>274</w>
+      <h>178</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Inquiry
@@ -394,6 +396,48 @@ Inquiry
 + minMoney: Money {Valid, NotNull}
 + maxMoney: Money {Valid, NotNull}
 + email: String {Email, NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>407</x>
+      <y>649</y>
+      <w>264</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+TechnologyRecord
+--
++ title: String {NotBlank}
++ activitySector: String {NotBlank}
++ nameInventor: String {NotBlank}
++ description: String {NotBlank}
++ website: String {URL, NotBlank}
++ email: String {Email, NotBlank}
++ openSource: Boolean {NotNull}
++ stars: Integer {Range(-5,5)}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>693</x>
+      <y>671</y>
+      <w>264</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+ToolRecord
+--
++ title: String {NotBlank}
++ activitySector: String {NotBlank}
++ nameInventor: String {NotBlank}
++ description: String {NotBlank}
++ website: String {URL, NotBlank}
++ email: String {Email, NotBlank}
++ openSource: Boolean {NotNull}
++ stars: Integer {Range(-5,5)}</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

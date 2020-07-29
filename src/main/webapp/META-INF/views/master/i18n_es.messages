@@ -47,11 +47,16 @@ master.menu.anonymous.vidalBulletin.form = Crear VidalBulletin
 master.menu.anonymous.lopezBulletin-list = Listar LopezBulletin
 master.menu.anonymous.lopezBulletin-create = Crear LopezBulletin
 
+master.menu.anonymous.technology-record.list = Listar archivos tecnológicos
+
 master.menu.anonymous.notice-list = Listar noticias
 
 # master.menu.authenticated ###################################################
 
 master.menu.authenticated = Autenticado
+
+master.menu.authenticated.technology-record.list = Listar archivos tecnológicos
+master.menu.authenticated.tool-record.list = Listar archivos de herramientas
 
 master.menu.authenticated.inquiry = Listar Consultas
 master.menu.authenticated.challenge = Desafíos 

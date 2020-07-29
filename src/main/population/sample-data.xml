@@ -185,7 +185,76 @@
 		<property name="body" value="body03"/>
 		<property name="link" value="link03"/>
 	</bean>
+
+	<!-- Technology Record -->
 	
+	<bean id="technologyRecord01" class="acme.entities.technologyRecord.TechnologyRecord">
+		<property name="title" value="Imperial Rifle"/>
+		<property name="activitySector" value="Imperial administration"/>
+		<property name="nameInventor" value="Tanya"/>
+		<property name="description" value="Rifle capable of shooting high explosive rounds."/>
+		<property name="website" value="http://www.imp.ip/rifle"/>
+		<property name="email" value="rifle.help@email.imp"/>
+		<property name="openSource" value="true"/>
+		<property name="stars" value="3"/>
+	</bean>
+	
+	<bean id="technologyRecord02" class="acme.entities.technologyRecord.TechnologyRecord">
+		<property name="title" value="Imperial Sniper"/>
+		<property name="activitySector" value="Imperial administration"/>
+		<property name="nameInventor" value="Tanya"/>
+		<property name="description" value="Sniper rifle capable of shooting high perforant rounds."/>
+		<property name="website" value="http://www.imp.ip/sniper-rifle"/>
+		<property name="email" value="sniper.rifle.help@email.imp"/>
+		<property name="openSource" value="true"/>
+		<property name="stars" value="5"/>
+	</bean>
+	
+	<bean id="technologyRecord03" class="acme.entities.technologyRecord.TechnologyRecord">
+		<property name="title" value="Imperial Rifle prototype"/>
+		<property name="activitySector" value="Imperial administration"/>
+		<property name="nameInventor" value="Tanya"/>
+		<property name="description" value="Prototype rifle, still in development."/>
+		<property name="website" value="http://www.imp.ip/rifle-prototype"/>
+		<property name="email" value="rifle.prototype.help@email.imp"/>
+		<property name="openSource" value="false"/>
+		<property name="stars" value=""/>
+	</bean>
+	
+	<!-- Tool Record -->
+	
+	<bean id="toolRecord01" class="acme.entities.toolRecord.ToolRecord">
+		<property name="title" value="Rifle"/>
+		<property name="activitySector" value="Imperial administration"/>
+		<property name="nameInventor" value="Tanya"/>
+		<property name="description" value="Rifle capable of shooting high explosive rounds."/>
+		<property name="website" value="http://www.imp.ip/rifle"/>
+		<property name="email" value="rifle.help@email.imp"/>
+		<property name="openSource" value="true"/>
+		<property name="stars" value="3"/>
+	</bean>
+	
+	<bean id="toolRecord02" class="acme.entities.toolRecord.ToolRecord">
+		<property name="title" value="Sniper"/>
+		<property name="activitySector" value="Imperial administration"/>
+		<property name="nameInventor" value="Tanya"/>
+		<property name="description" value="Sniper rifle capable of shooting high perforant rounds."/>
+		<property name="website" value="http://www.imp.ip/sniper-rifle"/>
+		<property name="email" value="sniper.rifle.help@email.imp"/>
+		<property name="openSource" value="true"/>
+		<property name="stars" value="5"/>
+	</bean>
+	
+	<bean id="toolRecord03" class="acme.entities.toolRecord.ToolRecord">
+		<property name="title" value="Rifle prototype"/>
+		<property name="activitySector" value="Imperial administration"/>
+		<property name="nameInventor" value="Tanya"/>
+		<property name="description" value="Prototype rifle, still in development."/>
+		<property name="website" value="http://www.imp.ip/rifle-prototype"/>
+		<property name="email" value="rifle.prototype.help@email.imp"/>
+		<property name="openSource" value="false"/>
+		<property name="stars" value=""/>
+	</bean>
 	
 	<!-- Challenge -->
 	
