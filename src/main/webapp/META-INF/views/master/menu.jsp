@@ -54,7 +54,8 @@
 		<!-- MENU AUTHENTICATED -->
 		<acme:menu-option code="master.menu.authenticated" access="hasRole('Authenticated')">
 			<acme:menu-suboption code="master.menu.authenticated.challenge" action="/authenticated/challenge/list"/>
-			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.notice-list" action="/authenticated/notice/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.overture-list" action="/authenticated/overture/list"/>
 		</acme:menu-option>
 
 
@@ -85,8 +86,6 @@
 			<acme:menu-suboption code="master.menu.user-account.provider" action="/authenticated/provider/update" access="hasRole('Provider')"/>
 			<acme:menu-suboption code="master.menu.user-account.become-consumer" action="/authenticated/consumer/create" access="!hasRole('Consumer')"/>
 			<acme:menu-suboption code="master.menu.user-account.consumer" action="/authenticated/consumer/update" access="hasRole('Consumer')"/>
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.administrator.notice-list" action="/administrator/notice/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>
