@@ -49,6 +49,12 @@ master.menu.anonymous.lopezBulletin-create = Crear LopezBulletin
 
 master.menu.anonymous.notice-list = Listar noticias
 
+# master.menu.authenticado ####################################################
+
+master.menu.authenticado = Autenticado
+
+master.menu.authenticated.inquiry = Listar Consultas
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador

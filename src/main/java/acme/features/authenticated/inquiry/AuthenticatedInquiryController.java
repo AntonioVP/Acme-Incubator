@@ -19,7 +19,10 @@ public class AuthenticatedInquiryController extends AbstractController<Authentic
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AuthenticatedInquiryListService listService;
+	private AuthenticatedInquiryListService	listService;
+
+	@Autowired
+	private AuthenticatedInquiryShowService	showService;
 
 
 	// Constructors -----------------------------------------------------------
@@ -27,5 +30,6 @@ public class AuthenticatedInquiryController extends AbstractController<Authentic
 	@PostConstruct
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
+		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 	}
 }
