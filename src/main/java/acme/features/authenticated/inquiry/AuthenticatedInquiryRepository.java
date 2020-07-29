@@ -12,6 +12,9 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AuthenticatedInquiryRepository extends AbstractRepository {
 
-	@Query("select s from Inquiry s")
+	@Query("select i from Inquiry i")
 	Collection<Inquiry> findMany();
+
+	@Query("select i from Inquiry i where i.id = ?1")
+	Inquiry findOnebyId(int id);
 }

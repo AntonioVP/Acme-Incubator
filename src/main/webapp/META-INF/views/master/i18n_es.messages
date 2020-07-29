@@ -52,6 +52,8 @@ master.menu.anonymous.notice-list = Listar noticias
 # master.menu.authenticated ###################################################
 
 master.menu.authenticated = Autenticado
+
+master.menu.authenticated.inquiry = Listar Consultas
 master.menu.authenticated.challenge = Desafíos 
 
 # master.menu.administrator ###################################################

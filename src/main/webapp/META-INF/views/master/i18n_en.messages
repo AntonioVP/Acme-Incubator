@@ -51,7 +51,10 @@ master.menu.anonymous.notice-list = List notices
 
 # master.menu.authenticated ###################################################
 master.menu.authenticated = Authenticated
+
+master.menu.authenticated.inquiry = List Inquiries
 master.menu.authenticated.challenge = Challenge
+
 
 # master.menu.administrator ###################################################
 
