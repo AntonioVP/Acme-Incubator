@@ -1,9 +1,6 @@
 
 package acme.features.authenticated.inquiry;
 
-import java.util.Collection;
-import java.util.Date;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,23 +8,18 @@ import acme.entities.inquiries.Inquiry;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
-import acme.framework.services.AbstractListService;
+import acme.framework.services.AbstractShowService;
 
 @Service
-public class AuthenticatedInquiryListService implements AbstractListService<Authenticated, Inquiry> {
-
-	// Internal state ---------------------------------------------------------
+public class AuthenticatedInquiryShowService implements AbstractShowService<Authenticated, Inquiry> {
 
 	@Autowired
-	AuthenticatedInquiryRepository repository;
+	private AuthenticatedInquiryRepository repository;
 
-
-	// AbstractListService --------------------
 
 	@Override
 	public boolean authorise(final Request<Inquiry> request) {
-		assert request != null;
-
+		// TODO Auto-generated method stub
 		return true;
 	}
 
@@ -41,14 +33,17 @@ public class AuthenticatedInquiryListService implements AbstractListService<Auth
 	}
 
 	@Override
-	public Collection<Inquiry> findMany(final Request<Inquiry> request) {
+	public Inquiry findOne(final Request<Inquiry> request) {
 		assert request != null;
 
-		Collection<Inquiry> result;
-		Date ahora = new Date(System.currentTimeMillis());
+		Inquiry result;
+		int id;
 
-		result = this.repository.findActive(ahora);
+		id = request.getModel().getInteger("id");
+
+		result = this.repository.findOnebyId(id);
 
 		return result;
 	}
+
 }

@@ -119,11 +119,43 @@
 	<bean id="inquiry03" class="acme.entities.inquiries.Inquiry">
 		<property name="title" value="Vida terrestre" />
 		<property name="creation" value="2020/01/01 11:00" />
-		<property name="deadline" value="2021/05/01 11:00" />
+		<property name="deadline" value="2020/05/01 11:00" />
 		<property name="description" value="Ser con unas caracteristicas particulares no se mantiene oculto." />
 		<property name="minMoney" value="100€" />
 		<property name="maxMoney" value="750€" />
 		<property name="email" value="other_doctor@doctor.com" />
+	</bean>
+	
+	<!-- Overture -->
+	
+	<bean id="overture01" class="acme.entities.overture.Overture">
+		<property name="title" value="title01" />
+		<property name="creation" value="2020/01/01 11:00" />
+		<property name="deadline" value="2021/01/01 11:00" />
+		<property name="description" value="description01" />
+		<property name="minMoney" value="300€" />
+		<property name="maxMoney" value="800€" />
+		<property name="email" value="01@gmail.com" />
+	</bean>
+	
+	<bean id="overture02" class="acme.entities.overture.Overture">
+		<property name="title" value="title02" />
+		<property name="creation" value="2020/01/01 11:00" />
+		<property name="deadline" value="2022/01/01 11:00" />
+		<property name="description" value="description02" />
+		<property name="minMoney" value="400€" />
+		<property name="maxMoney" value="500€" />
+		<property name="email" value="02@gmail.com" />
+	</bean>
+	
+	<bean id="overture03" class="acme.entities.overture.Overture">
+		<property name="title" value="title03" />
+		<property name="creation" value="2000/01/01 11:00" />
+		<property name="deadline" value="2015/05/01 11:00" />
+		<property name="description" value="description03" />
+		<property name="minMoney" value="100€" />
+		<property name="maxMoney" value="750€" />
+		<property name="email" value="03@gmail.com" />
 	</bean>
 
 	<!-- Notice -->
@@ -153,7 +185,7 @@
 		<property name="body" value="body03"/>
 		<property name="link" value="link03"/>
 	</bean>
-	
+
 	<!-- Technology Record -->
 	
 	<bean id="technologyRecord01" class="acme.entities.technologyRecord.TechnologyRecord">
@@ -223,5 +255,42 @@
 		<property name="openSource" value="false"/>
 		<property name="stars" value=""/>
 	</bean>
-
+	
+	<!-- Challenge -->
+	
+	<bean id="challenge01" class="acme.entities.challenges.Challenge">
+		<property name="description" value="Description of Challenge 01"/>
+		<property name="title" value="Challenge 01"/>
+		<property name="deadline" value="2029/07/15 17:00"/>
+		<property name="rewardExpert" value="1000€"/>
+		<property name="rewardAverage" value="750€"/>
+		<property name="rewardRookie" value="500€"/>
+	</bean>
+	
+	<bean id="challenge02" class="acme.entities.challenges.Challenge">
+		<property name="description" value="Description of Challenge 02"/>
+		<property name="title" value="Challenge 02"/>
+		<property name="deadline" value="2021/07/5 10:00"/>
+		<property name="rewardExpert" value="2000€"/>
+		<property name="rewardAverage" value="1000€"/>
+		<property name="rewardRookie" value="500€"/>
+	</bean>
+	
+	<bean id="challenge03" class="acme.entities.challenges.Challenge">
+		<property name="description" value="Description of Challenge 03"/>
+		<property name="title" value="Challenge 03"/>
+		<property name="deadline" value="2021/07/20 13:00"/>
+		<property name="rewardExpert" value="500€"/>
+		<property name="rewardAverage" value="200€"/>
+		<property name="rewardRookie" value="100€"/>
+	</bean>
+	
+	<bean id="challenge04" class="acme.entities.challenges.Challenge">
+		<property name="description" value="Description of Challenge 04"/>
+		<property name="title" value="Challenge 04"/>
+		<property name="deadline" value="2015/07/20 13:00"/>
+		<property name="rewardExpert" value="888€"/>
+		<property name="rewardAverage" value="777€"/>
+		<property name="rewardRookie" value="666€"/>
+	</bean>
 </beans>

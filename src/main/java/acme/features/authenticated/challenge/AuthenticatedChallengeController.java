@@ -1,5 +1,5 @@
 
-package acme.features.authenticated.inquiry;
+package acme.features.authenticated.challenge;
 
 import javax.annotation.PostConstruct;
 
@@ -7,22 +7,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.entities.inquiries.Inquiry;
+import acme.entities.challenges.Challenge;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Authenticated;
 
 @Controller
-@RequestMapping("/authenticated/inquiry/")
-public class AuthenticatedInquiryController extends AbstractController<Authenticated, Inquiry> {
+@RequestMapping("/authenticated/challenge/")
+public class AuthenticatedChallengeController extends AbstractController<Authenticated, Challenge> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AuthenticatedInquiryListService	listService;
-
+	private AuthenticatedChallengeListService listService;
+	
 	@Autowired
-	private AuthenticatedInquiryShowService	showService;
+	private AuthenticatedChallengeShowService showService;
 
 
 	// Constructors -----------------------------------------------------------

@@ -54,8 +54,12 @@ master.menu.anonymous.notice-list = Listar noticias
 # master.menu.authenticated ###################################################
 
 master.menu.authenticated = Autenticado
+
 master.menu.authenticated.technology-record.list = Listar archivos tecnológicos
 master.menu.authenticated.tool-record.list = Listar archivos de herramientas
+
+master.menu.authenticated.inquiry = Listar Consultas
+master.menu.authenticated.challenge = Desafíos 
 
 # master.menu.administrator ###################################################
 
@@ -82,7 +86,8 @@ master.menu.user-account.provider = Datos de proveedor
 master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
-master.menu.user-account.notice-list = Listar noticias
+master.menu.authenticated.notice-list = Listar noticias
+master.menu.authenticated.overture-list = Listar aperturas
 
 ﻿# master.footer ###############################################################
 

@@ -25,15 +25,21 @@
 
     drop table if exists `authenticated`;
 
+    drop table if exists `challenge`;
+
     drop table if exists `consumer`;
 
     drop table if exists `franco_bulletin`;
 
     drop table if exists `gutierrez_bulletin`;
 
+    drop table if exists `inquiry`;
+
     drop table if exists `lopez_bulletin`;
 
     drop table if exists `notice`;
+
+    drop table if exists `overture`;
 
     drop table if exists `provider`;
 

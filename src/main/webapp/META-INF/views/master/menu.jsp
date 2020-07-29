@@ -17,8 +17,17 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:menu-bar code="master.menu.home">
+	
+	<!-- Parte izquierda del men� -->
 	<acme:menu-left>
+		
+		<!-- Cosas de Anonymous -->
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
+		
+			<acme:menu-suboption code="master.menu.anonymous.notice-list" action="/anonymous/notice/list"/>
+			
+			<acme:menu-separator/>
+			
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-Pablo" action="https://www.youtube.com/watch?v=tVuvTKMpDcM"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-Gabriel" action="https://www.github.com/"/>
@@ -44,6 +53,7 @@
       
 			<acme:menu-suboption code="master.menu.anonymous.lopezBulletin-list" action="/anonymous/lopez-bulletin/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.lopezBulletin-create" action="/anonymous/lopez-bulletin/create"/>
+
 			
 			<acme:menu-separator/>
 			
@@ -55,11 +65,24 @@
 
 		</acme:menu-option>
 
+    <!-- MENU AUTHENTICATED -->
+    
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.authenticated.technology-record.list" action="/authenticated/technology-record/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.tool-record.list" action="/authenticated/tool-record/list"/>
+      <acme:menu-separator/>
+      <acme:menu-suboption code="master.menu.authenticated.challenge" action="/authenticated/challenge/list"/>
+      <acme:menu-separator/>
+      <acme:menu-suboption code="master.menu.authenticated.inquiry" action="/authenticated/inquiry/list"/>
+      <acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.notice-list" action="/authenticated/notice/list"/>
+      <acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.overture-list" action="/authenticated/overture/list"/>
 		</acme:menu-option>
+
+
+    <!-- MENU ADMIN -->
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
@@ -68,7 +91,8 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 		</acme:menu-option>
-
+		
+		
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
 			<acme:menu-suboption code="master.menu.provider.favourite-link" action="http://www.example.com/"/>
 		</acme:menu-option>
@@ -78,18 +102,19 @@
 		</acme:menu-option>
 	</acme:menu-left>
 
+	<!-- Parte derecha del men� -->
 	<acme:menu-right>
 		<acme:menu-option code="master.menu.sign-up" action="/anonymous/user-account/create" access="isAnonymous()"/>
 		<acme:menu-option code="master.menu.sign-in" action="/master/sign-in" access="isAnonymous()"/>
 
 		<acme:menu-option code="master.menu.user-account" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.inquiry" action="/authenticated/inquiry/list"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.user-account.general-data" action="/authenticated/user-account/update"/>
 			<acme:menu-suboption code="master.menu.user-account.become-provider" action="/authenticated/provider/create" access="!hasRole('Provider')"/>
 			<acme:menu-suboption code="master.menu.user-account.provider" action="/authenticated/provider/update" access="hasRole('Provider')"/>
 			<acme:menu-suboption code="master.menu.user-account.become-consumer" action="/authenticated/consumer/create" access="!hasRole('Consumer')"/>
 			<acme:menu-suboption code="master.menu.user-account.consumer" action="/authenticated/consumer/update" access="hasRole('Consumer')"/>
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.administrator.notice-list" action="/administrator/notice/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>
