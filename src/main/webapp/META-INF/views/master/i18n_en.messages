@@ -49,6 +49,10 @@ master.menu.anonymous.lopezBulletin-create = Create LopezBulletin
 
 master.menu.anonymous.notice-list = List notices
 
+# master.menu.authenticated ###################################################
+master.menu.authenticated = Authenticated
+master.menu.authenticated.challenge = Challenge
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
