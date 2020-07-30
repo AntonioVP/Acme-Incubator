@@ -35,7 +35,7 @@ public class AdministratorCustomParameterShowService implements AbstractShowServ
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "spamWordsEn", "spamWordsEs", "threshold", "sectors");
+		request.unbind(entity, model, "spamWordsEn", "spamWordsEs", "spamThreshold", "sectors");
 	}
 
 	@Override

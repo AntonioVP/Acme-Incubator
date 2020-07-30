@@ -67,6 +67,8 @@ master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.notice-list = List notices
 master.menu.administrator.shutdown = Shut down
 
+master.menu.administrator.custom-parameter = Custom Parameters
+
 # master.menu.provider ########################################################
 
 master.menu.provider = Provider
