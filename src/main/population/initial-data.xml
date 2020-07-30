@@ -73,4 +73,13 @@
 		<property name="userAccount" ref="administratorUserAccount" />
 	</bean>
 	
+	<!-- CustomParameters -->
+	
+	<bean name="administratorUserAccount" class="acme.entities.customParameters.CustomParameter">
+		<property name="spamWordsEn" value="sex, hard core, viagra, cialis, nigeria, you've won, million dollar" />
+		<property name="spamWordsEn" value="sexo,hard core,viagra,cialis,nigeria,has ganado,millon de dolares" />
+		<property name="spamThreshold" value="2.50" />
+		<property name="sectors" value="Technology, Science, Arts, Business, Health" />
+	</bean>
+	
 </beans>
