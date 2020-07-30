@@ -4,6 +4,8 @@ package acme.entities.customParameters;
 import javax.persistence.Entity;
 import javax.validation.constraints.NotNull;
 
+import org.hibernate.validator.constraints.Range;
+
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -25,6 +27,7 @@ public class CustomParameter extends DomainEntity {
 	@NotNull
 	private String				spamWordsEs;
 
+	@Range(min = 0, max = 100)
 	private double				spamThreshold;
 
 	@NotNull

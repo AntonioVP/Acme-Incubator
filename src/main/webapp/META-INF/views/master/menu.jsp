@@ -18,7 +18,7 @@
 
 <acme:menu-bar code="master.menu.home">
 	
-	<!-- Parte izquierda del men� -->
+	<!-- Parte izquierda del menu -->
 	<acme:menu-left>
 		
 		<!-- Cosas de Anonymous -->
@@ -85,6 +85,8 @@
     <!-- MENU ADMIN -->
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
+			<acme:menu-suboption code="master.menu.administrator.custom-parameter" action="/administrator/custom-parameter/show"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.notice-list" action="/administrator/notice/list"/>
@@ -102,7 +104,7 @@
 		</acme:menu-option>
 	</acme:menu-left>
 
-	<!-- Parte derecha del men� -->
+	<!-- Parte derecha del menu -->
 	<acme:menu-right>
 		<acme:menu-option code="master.menu.sign-up" action="/anonymous/user-account/create" access="isAnonymous()"/>
 		<acme:menu-option code="master.menu.sign-in" action="/master/sign-in" access="isAnonymous()"/>
