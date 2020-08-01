@@ -1,0 +1,25 @@
+#Form
+
+administrator.dashboard.form.label.totalNotices = Total of Notices:
+administrator.dashboard.form.label.totalTechnologyRecords = Total of Technology Records:
+administrator.dashboard.form.label.totalToolRecords = Total of Tool Records:
+
+administrator.dashboard.form.label.minMoneyActiveInquiries = Minimun Money of active Inquiries:
+administrator.dashboard.form.label.maxMoneyActiveInquiries = Maximun Money of active Inquiries:
+administrator.dashboard.form.label.avgMinMoneyActiveInquiries = Average Minimun Money of active Inquiries:
+administrator.dashboard.form.label.avgMaxMoneyActiveInquiries = Average Maximun Money of active Inquiries:
+administrator.dashboard.form.label.stdMinMoneyActiveInquiries = Standart Desviation of Minimun Money of active Inquiries:
+administrator.dashboard.form.label.stdMaxMoneyActiveInquiries = Standart Desviation of Maximun Money of active Inquiries:
+
+administrator.dashboard.form.label.minMoneyActiveOvertures = Minimun Money of active Overtures:
+administrator.dashboard.form.label.maxMoneyActiveOvertures = Maximun Money of active Overtures:
+administrator.dashboard.form.label.avgMinMoneyActiveOvertures = Average Minimun Money of active Overtures:
+administrator.dashboard.form.label.avgMaxMoneyActiveOvertures = Average Maximun Money of active Overtures:
+administrator.dashboard.form.label.stdMinMoneyActiveOvertures = Standart Desviation of Minimun Money of active Overtures:
+administrator.dashboard.form.label.stdMaxMoneyActiveOvertures = Standart Desviation of Maximun Money of active Overtures:
+
+administrator.dashboard.form.label.chart.technologyBySector = Technologies group by Sector
+administrator.dashboard.form.label.chart.ratio-technologies = Ratio open and closed source Technologies
+
+administrator.dashboard.form.label.chart.toolBySector = Tools group by Sector
+administrator.dashboard.form.label.chart.ratio-tools = Ratio open and closed source Tools

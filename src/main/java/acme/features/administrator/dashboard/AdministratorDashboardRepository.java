@@ -65,7 +65,7 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select count(t), t.activitySector from TechnologyRecord t group by t.activitySector")
 	Collection<Object[]> getTechnologiesGroupBySector();
 
-	@Query("select 100*count(t)/(select count(te) from TechnologyRecord te), t.openSource from TechnologyRecord t")
+	@Query("select 100*count(t)/(select count(te) from TechnologyRecord te), t.openSource from TechnologyRecord t group by t.openSource")
 	Collection<Object[]> getRatioOpenClosedSourceTechnologies();
 
 	//Para la grafica de tool
@@ -73,6 +73,6 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select count(t), t.activitySector from ToolRecord t group by t.activitySector")
 	Collection<Object[]> getToolsGroupBySector();
 
-	@Query("select 100*count(t)/(select count(to) from ToolRecord to), t.openSource from ToolRecord t")
+	@Query("select 100*count(t)/(select count(to) from ToolRecord to), t.openSource from ToolRecord t group by t.openSource")
 	Collection<Object[]> getRatioOpenClosedSourceTools();
 }
