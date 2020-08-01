@@ -48,6 +48,7 @@ master.menu.anonymous.lopezBulletin-list = List LopezBulletin
 master.menu.anonymous.lopezBulletin-create = Create LopezBulletin
 
 master.menu.anonymous.technology-record.list = List technology records
+master.menu.anonymous.tool-record.list = List tool records
 
 master.menu.anonymous.notice-list = List notices
 
@@ -58,7 +59,7 @@ master.menu.authenticated.technology-record.list = List technology records
 master.menu.authenticated.tool-record.list = List tool records
 
 master.menu.authenticated.inquiry = List Inquiries
-master.menu.authenticated.challenge = Challenge
+master.menu.authenticated.challenge = List Challenges
 
 # master.menu.administrator ###################################################
 

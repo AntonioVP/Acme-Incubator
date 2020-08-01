@@ -25,6 +25,8 @@
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 		
 			<acme:menu-suboption code="master.menu.anonymous.notice-list" action="/anonymous/notice/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.technology-record.list" action="/anonymous/technology-record/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.tool-record.list" action="/anonymous/tool-record/list"/>
 			
 			<acme:menu-separator/>
 			
@@ -54,44 +56,40 @@
 			<acme:menu-suboption code="master.menu.anonymous.lopezBulletin-list" action="/anonymous/lopez-bulletin/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.lopezBulletin-create" action="/anonymous/lopez-bulletin/create"/>
 
-			
-			<acme:menu-separator/>
-			
-			<acme:menu-suboption code="master.menu.anonymous.technology-record.list" action="/anonymous/technology-record/list"/>
-			
-			<acme:menu-separator/>
-			
-			<acme:menu-suboption code="master.menu.anonymous.notice-list" action="/anonymous/notice/list"/>
-
 		</acme:menu-option>
 
     <!-- MENU AUTHENTICATED -->
     
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
-			<acme:menu-suboption code="master.menu.authenticated.technology-record.list" action="/authenticated/technology-record/list"/>
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.authenticated.tool-record.list" action="/authenticated/tool-record/list"/>
-      <acme:menu-separator/>
-      <acme:menu-suboption code="master.menu.authenticated.challenge" action="/authenticated/challenge/list"/>
-      <acme:menu-separator/>
-      <acme:menu-suboption code="master.menu.authenticated.inquiry" action="/authenticated/inquiry/list"/>
-      <acme:menu-separator/>
+
+      		<acme:menu-suboption code="master.menu.authenticated.challenge" action="/authenticated/challenge/list"/>
+     		<acme:menu-suboption code="master.menu.authenticated.inquiry" action="/authenticated/inquiry/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.notice-list" action="/authenticated/notice/list"/>
-      <acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.overture-list" action="/authenticated/overture/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.technology-record.list" action="/authenticated/technology-record/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.tool-record.list" action="/authenticated/tool-record/list"/>
+			
+			
 		</acme:menu-option>
 
 
     <!-- MENU ADMIN -->
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
+			
+			<acme:menu-suboption code="master.menu.administrator.notice-list" action="/administrator/notice/list"/>
+			
+			<acme:menu-separator/>
+			
 			<acme:menu-suboption code="master.menu.administrator.dashboard.show" action="/administrator/dashboard/show"/>
 			<acme:menu-suboption code="master.menu.administrator.custom-parameter" action="/administrator/custom-parameter/show"/>
+			
 			<acme:menu-separator/>
+			
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
+			
 			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.administrator.notice-list" action="/administrator/notice/list"/>
-			<acme:menu-separator/>
+			
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 		</acme:menu-option>
 		
@@ -111,8 +109,6 @@
 		<acme:menu-option code="master.menu.sign-in" action="/master/sign-in" access="isAnonymous()"/>
 
 		<acme:menu-option code="master.menu.user-account" access="isAuthenticated()">
-			<acme:menu-suboption code="master.menu.authenticated.inquiry" action="/authenticated/inquiry/list"/>
-			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.user-account.general-data" action="/authenticated/user-account/update"/>
 			<acme:menu-suboption code="master.menu.user-account.become-provider" action="/authenticated/provider/create" access="!hasRole('Provider')"/>
 			<acme:menu-suboption code="master.menu.user-account.provider" action="/authenticated/provider/update" access="hasRole('Provider')"/>

@@ -14,5 +14,6 @@ authenticated.inquiry.form.label.deadline = Deadline:
 authenticated.inquiry.form.label.description = Description:
 authenticated.inquiry.form.label.minMoney = Minimun amount:
 authenticated.inquiry.form.label.maxMoney = Maximun amount:
+authenticated.inquiry.form.label.email = Email:
 
 authenticated.inquiry.form.button.return = Return
