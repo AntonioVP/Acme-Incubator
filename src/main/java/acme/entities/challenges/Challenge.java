@@ -1,7 +1,6 @@
 package acme.entities.challenges;
 
 
-import java.sql.Date;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
@@ -10,11 +9,10 @@ import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
-import javax.validation.constraints.Future;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-import org.hibernate.query.criteria.internal.expression.function.CurrentDateFunction;
+
 
 import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
@@ -33,6 +31,7 @@ public class Challenge extends DomainEntity {
 	@NotBlank
 	private String				title;
 
+	@NotNull
 	private String				description;
 	
 	@NotNull

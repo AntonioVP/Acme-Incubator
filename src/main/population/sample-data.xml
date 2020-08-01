@@ -293,4 +293,33 @@
 		<property name="rewardAverage" value="777€"/>
 		<property name="rewardRookie" value="666€"/>
 	</bean>
+	
+	<!-- CreditCard -->
+	
+	 <bean name="creditCard01" class="acme.entities.creditCards.CreditCard">
+		<property name="holderName" value="Rosnops"/>
+		<property name="brandName" value="VISA"/>
+		<property name="number" value="4339001299666117"/>
+		<property name="exMonth" value="01"/>
+		<property name="exYear" value="25"/>
+		<property name="cvv" value="001"/>
+	  </bean>
+	  
+	  <!-- Banner -->
+	  <bean name="banner01" class="acme.entities.banners.Banner">
+		  <property name="picture" value="picture1"/>
+		  <property name="slogan" value="Como dijo Socrates: No es momento para provervios"/>
+		  <property name="targetUrl" value="https://i1.wp.com/www.lagraderia.com/wp-content/uploads/2018/12/no-imagen.jpg?fit=300%2C300"/>
+		  <property name="creditCard">
+			<ref bean="creditCard01"/>
+		  </property>	
+	  </bean> 
+	  <bean name="banner02" class="acme.entities.banners.Banner">
+		  <property name="picture" value="picture2"/>
+		  <property name="slogan" value="A volaar"/>
+		  <property name="targetUrl" value="https://www.youtube.com/watch?v=ou3H5EWiOak"/>
+		  <property name="creditCard">
+			<null/>
+		  </property>	
+	  </bean> 
 </beans>
