@@ -1,0 +1,11 @@
+administrator.notice.form.label.picture = Imagen:
+administrator.notice.form.label.title = Titulo:
+administrator.notice.form.label.creation = Fecha de creacion:
+administrator.notice.form.label.deadline = Fecha limite:
+administrator.notice.form.label.body = Cuerpo:
+administrator.notice.form.label.link = Link:
+administrator.notice.form.button.return = Volver
+
+administrator.notice.list.label.title = Titulo
+administrator.notice.list.label.creation = Fecha de creacion
+administrator.notice.list.label.deadline = Fecha limite

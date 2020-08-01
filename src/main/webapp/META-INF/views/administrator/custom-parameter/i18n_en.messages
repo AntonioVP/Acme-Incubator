@@ -1,0 +1,8 @@
+#Form
+
+administrator.custom-parameter.form.label.spamWordsEn = Spam Words English:
+administrator.custom-parameter.form.label.spamWordsEs = Spam Words Spanish:
+administrator.custom-parameter.form.label.spamThreshold = Spam Thresold:
+administrator.custom-parameter.form.label.sectors = Sectors:
+
+administrator.custom-parameter.form.button.return = Return

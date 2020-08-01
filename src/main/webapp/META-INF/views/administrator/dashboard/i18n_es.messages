@@ -1,0 +1,25 @@
+#Form
+
+administrator.dashboard.form.label.totalNotices = Total de Noticias:
+administrator.dashboard.form.label.totalTechnologyRecords = Total de Archivos Tecnologicos:
+administrator.dashboard.form.label.totalToolRecords = Total de Archivos de Herramientas:
+
+administrator.dashboard.form.label.minMoneyActiveInquiries = Dinero minimo de Consultas activas:
+administrator.dashboard.form.label.maxMoneyActiveInquiries = Dinero maximo de Consultas activas:
+administrator.dashboard.form.label.avgMinMoneyActiveInquiries = Dinero promedio minimo de Consultas activas:
+administrator.dashboard.form.label.avgMaxMoneyActiveInquiries = Dinero promedio maximo de Consultas activas:
+administrator.dashboard.form.label.stdMinMoneyActiveInquiries = Desviacion estandar de dinero minimo de Consultas activas:
+administrator.dashboard.form.label.stdMaxMoneyActiveInquiries = Desviacion estandar de dinero maximo de Consultas activas:
+
+administrator.dashboard.form.label.minMoneyActiveOvertures = Dinero minimo de Aperturas activas:
+administrator.dashboard.form.label.maxMoneyActiveOvertures = Dinero maximo de Apertura activas:
+administrator.dashboard.form.label.avgMinMoneyActiveOvertures = Dinero promedio minimo de Apertura activas:
+administrator.dashboard.form.label.avgMaxMoneyActiveOvertures = Dinero promedio maximo de Apertura activas:
+administrator.dashboard.form.label.stdMinMoneyActiveOvertures = Desviacion estandar del dinero minimo de Apertura activas:
+administrator.dashboard.form.label.stdMaxMoneyActiveOvertures = Desviacion estandar del dinero maximo de Apertura activas:
+
+administrator.dashboard.form.label.chart.technologyBySector = Tecnologias agrupadas por Sector
+administrator.dashboard.form.label.chart.ratio-technologies = Ratio de codigo abierto/cerrado de Tecnologias
+
+administrator.dashboard.form.label.chart.toolBySector = Herramientas agrupadas por Sector
+administrator.dashboard.form.label.chart.ratio-tools = Ratio de codigo abierto/cerrado de Herramientas

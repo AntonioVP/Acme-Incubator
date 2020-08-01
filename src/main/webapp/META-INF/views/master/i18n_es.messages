@@ -47,11 +47,30 @@ master.menu.anonymous.vidalBulletin.form = Crear VidalBulletin
 master.menu.anonymous.lopezBulletin-list = Listar LopezBulletin
 master.menu.anonymous.lopezBulletin-create = Crear LopezBulletin
 
+master.menu.anonymous.technology-record.list = Listar archivos tecnológicos
+master.menu.anonymous.tool-record.list = Listar archivos de herramientas
+
+master.menu.anonymous.notice-list = Listar noticias
+
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated = Autenticado
+
+master.menu.authenticated.technology-record.list = Listar archivos tecnológicos
+master.menu.authenticated.tool-record.list = Listar archivos de herramientas
+
+master.menu.authenticated.inquiry = Listar Consultas
+master.menu.authenticated.challenge = Listar Desafíos 
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
+master.menu.administrator.notice-list = Listar noticias
 master.menu.administrator.shutdown = Parar el sistema
+
+master.menu.administrator.dashboard.show = Tablon de anuncios
+master.menu.administrator.custom-parameter = Parametros personalizables
 
 # master.menu.provider ########################################################
 
@@ -71,6 +90,8 @@ master.menu.user-account.provider = Datos de proveedor
 master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
+master.menu.authenticated.notice-list = Listar noticias
+master.menu.authenticated.overture-list = Listar aperturas
 
 ﻿# master.footer ###############################################################
 

@@ -17,35 +17,39 @@
 
 	<import resource="conversion-service.xml" />
 	
-		<bean id="francoBulletin01" class="acme.entities.francoBulletin.FrancoBulletin">
-			<property name="title" value="Sample francoBulletin 01" />
-			<property name="text" value="This is the description of a sample francoBulletin" />
-		</bean>
+	<!-- Franco Bulletin -->
+	
+	<bean id="francoBulletin01" class="acme.entities.francoBulletin.FrancoBulletin">
+		<property name="title" value="Sample francoBulletin 01" />
+		<property name="text" value="This is the description of a sample francoBulletin" />
+	</bean>
+	
+	<bean id="francoBulletin02" class="acme.entities.francoBulletin.FrancoBulletin">
+		<property name="title" value="Sample francoBulletin 02" />
+		<property name="text" value="This is the description of a sample francoBulletin" />
+	</bean>
 		
-		<bean id="francoBulletin02" class="acme.entities.francoBulletin.FrancoBulletin">
-			<property name="title" value="Sample francoBulletin 02" />
-			<property name="text" value="This is the description of a sample francoBulletin" />
-		</bean>
-		
-		<bean id="francoBulletin03" class="acme.entities.francoBulletin.FrancoBulletin">
-			<property name="title" value="Sample francoBulletin 03" />
-			<property name="text"><null/></property>
-		</bean>
-
-		<bean id="gutierrezBulletin01" class="acme.entities.gutierrezBulletin.GutierrezBulletin">
+	<bean id="francoBulletin03" class="acme.entities.francoBulletin.FrancoBulletin">
+		<property name="title" value="Sample francoBulletin 03" />
+		<property name="text"><null/></property>
+	</bean>
+	
+	<!-- Gutierrez Bulletin -->
+	
+	<bean id="gutierrezBulletin01" class="acme.entities.gutierrezBulletin.GutierrezBulletin">
 		<property name="name" value="Sample gutierrezBulletin 01" />
 		<property name="advertise" value="This is the description of a sample gutierrezBulletin" />
-		</bean>
+	</bean>
 		
-		<bean id="gutierrezBulletin02" class="acme.entities.gutierrezBulletin.GutierrezBulletin">
+	<bean id="gutierrezBulletin02" class="acme.entities.gutierrezBulletin.GutierrezBulletin">
 		<property name="name" value="Sample gutierrezBulletin 02" />
 		<property name="advertise" value="This is the description of a sample gutierrezBulletin" />
-		</bean>
+	</bean>
 		
-		<bean id="gutierrezBulletin03" class="acme.entities.gutierrezBulletin.GutierrezBulletin">
+	<bean id="gutierrezBulletin03" class="acme.entities.gutierrezBulletin.GutierrezBulletin">
 		<property name="name" value="Sample gutierrezBulletin 03" />
 		<property name="advertise"><null/></property>
-		</bean>	
+	</bean>	
 	
 	<!-- Vidal Bulletin -->
 	
@@ -90,4 +94,232 @@
 		<property name="moment" value="1938/07/15 17:00"/>
 	</bean>
 
+	<!-- Inquiry -->
+	
+	<bean id="inquiry01" class="acme.entities.inquiries.Inquiry">
+		<property name="title" value="Naturaleza de Leslie" />
+		<property name="creation" value="2020/01/01 11:00" />
+		<property name="deadline" value="2021/01/01 11:00" />
+		<property name="description" value="Ser con unas caracteristicas particulares se mantiene oculto." />
+		<property name="minMoney" value="300€" />
+		<property name="maxMoney" value="800€" />
+		<property name="email" value="drLesly@unique.com" />
+	</bean>
+	
+	<bean id="inquiry02" class="acme.entities.inquiries.Inquiry">
+		<property name="title" value="Vida extraterrestre" />
+		<property name="creation" value="2020/01/01 11:00" />
+		<property name="deadline" value="2021/01/01 11:00" />
+		<property name="description" value="Ser con unas caracteristicas particulares se mantiene oculto. Casualidad?" />
+		<property name="minMoney" value="400€" />
+		<property name="maxMoney" value="500€" />
+		<property name="email" value="drLesly@second.com" />
+	</bean>
+	
+	<bean id="inquiry03" class="acme.entities.inquiries.Inquiry">
+		<property name="title" value="Vida terrestre" />
+		<property name="creation" value="2020/01/01 11:00" />
+		<property name="deadline" value="2020/05/01 11:00" />
+		<property name="description" value="Ser con unas caracteristicas particulares no se mantiene oculto." />
+		<property name="minMoney" value="100€" />
+		<property name="maxMoney" value="750€" />
+		<property name="email" value="other_doctor@doctor.com" />
+	</bean>
+	
+	<!-- Overture -->
+	
+	<bean id="overture01" class="acme.entities.overture.Overture">
+		<property name="title" value="title01" />
+		<property name="creation" value="2020/01/01 11:00" />
+		<property name="deadline" value="2021/01/01 11:00" />
+		<property name="description" value="description01" />
+		<property name="minMoney" value="300€" />
+		<property name="maxMoney" value="800€" />
+		<property name="email" value="01@gmail.com" />
+	</bean>
+	
+	<bean id="overture02" class="acme.entities.overture.Overture">
+		<property name="title" value="title02" />
+		<property name="creation" value="2020/01/01 11:00" />
+		<property name="deadline" value="2022/01/01 11:00" />
+		<property name="description" value="description02" />
+		<property name="minMoney" value="400€" />
+		<property name="maxMoney" value="500€" />
+		<property name="email" value="02@gmail.com" />
+	</bean>
+	
+	<bean id="overture03" class="acme.entities.overture.Overture">
+		<property name="title" value="title03" />
+		<property name="creation" value="2000/01/01 11:00" />
+		<property name="deadline" value="2015/05/01 11:00" />
+		<property name="description" value="description03" />
+		<property name="minMoney" value="100€" />
+		<property name="maxMoney" value="750€" />
+		<property name="email" value="03@gmail.com" />
+	</bean>
+
+	<!-- Notice -->
+	
+	<bean id="notice01" class="acme.entities.notice.Notice">
+		<property name="picture" value="urlPicture01"/>
+		<property name="title" value="title01"/>
+		<property name="creation" value="1987/07/15 17:00"/>
+		<property name="deadline" value="2050/07/15 17:00"/>
+		<property name="body" value="body01"/>
+	</bean>
+	
+	<bean id="notice02" class="acme.entities.notice.Notice">
+		<property name="picture" value="urlPicture02"/>
+		<property name="title" value="title02"/>
+		<property name="creation" value="1987/07/15 17:00"/>
+		<property name="deadline" value="2050/07/15 17:00"/>
+		<property name="body" value="body02"/>
+		<property name="link" value="link02"/>
+	</bean>
+	
+	<bean id="notice03" class="acme.entities.notice.Notice">
+		<property name="picture" value="urlPicture03"/>
+		<property name="title" value="title03"/>
+		<property name="creation" value="1987/07/15 17:00"/>
+		<property name="deadline" value="2001/07/15 17:00"/>
+		<property name="body" value="body03"/>
+		<property name="link" value="link03"/>
+	</bean>
+
+	<!-- Technology Record -->
+	
+	<bean id="technologyRecord01" class="acme.entities.technologyRecord.TechnologyRecord">
+		<property name="title" value="Imperial Rifle"/>
+		<property name="activitySector" value="Imperial administration"/>
+		<property name="nameInventor" value="Tanya"/>
+		<property name="description" value="Rifle capable of shooting high explosive rounds."/>
+		<property name="website" value="http://www.imp.ip/rifle"/>
+		<property name="email" value="rifle.help@email.imp"/>
+		<property name="openSource" value="true"/>
+		<property name="stars" value="3"/>
+	</bean>
+	
+	<bean id="technologyRecord02" class="acme.entities.technologyRecord.TechnologyRecord">
+		<property name="title" value="Imperial Sniper"/>
+		<property name="activitySector" value="Imperial administration"/>
+		<property name="nameInventor" value="Tanya"/>
+		<property name="description" value="Sniper rifle capable of shooting high perforant rounds."/>
+		<property name="website" value="http://www.imp.ip/sniper-rifle"/>
+		<property name="email" value="sniper.rifle.help@email.imp"/>
+		<property name="openSource" value="true"/>
+		<property name="stars" value="5"/>
+	</bean>
+	
+	<bean id="technologyRecord03" class="acme.entities.technologyRecord.TechnologyRecord">
+		<property name="title" value="Imperial Rifle prototype"/>
+		<property name="activitySector" value="International administration"/>
+		<property name="nameInventor" value="Tanya"/>
+		<property name="description" value="Prototype rifle, still in development."/>
+		<property name="website" value="http://www.imp.ip/rifle-prototype"/>
+		<property name="email" value="rifle.prototype.help@email.imp"/>
+		<property name="openSource" value="false"/>
+		<property name="stars" value=""/>
+	</bean>
+	
+	<!-- Tool Record -->
+	
+	<bean id="toolRecord01" class="acme.entities.toolRecord.ToolRecord">
+		<property name="title" value="Rifle"/>
+		<property name="activitySector" value="Imperial administration"/>
+		<property name="nameInventor" value="Tanya"/>
+		<property name="description" value="Rifle capable of shooting high explosive rounds."/>
+		<property name="website" value="http://www.imp.ip/rifle"/>
+		<property name="email" value="rifle.help@email.imp"/>
+		<property name="openSource" value="true"/>
+		<property name="stars" value="3"/>
+	</bean>
+	
+	<bean id="toolRecord02" class="acme.entities.toolRecord.ToolRecord">
+		<property name="title" value="Sniper"/>
+		<property name="activitySector" value="Imperial administration"/>
+		<property name="nameInventor" value="Tanya"/>
+		<property name="description" value="Sniper rifle capable of shooting high perforant rounds."/>
+		<property name="website" value="http://www.imp.ip/sniper-rifle"/>
+		<property name="email" value="sniper.rifle.help@email.imp"/>
+		<property name="openSource" value="false"/>
+		<property name="stars" value="5"/>
+	</bean>
+	
+	<bean id="toolRecord03" class="acme.entities.toolRecord.ToolRecord">
+		<property name="title" value="Rifle prototype"/>
+		<property name="activitySector" value="National administration"/>
+		<property name="nameInventor" value="Tanya"/>
+		<property name="description" value="Prototype rifle, still in development."/>
+		<property name="website" value="http://www.imp.ip/rifle-prototype"/>
+		<property name="email" value="rifle.prototype.help@email.imp"/>
+		<property name="openSource" value="false"/>
+		<property name="stars" value=""/>
+	</bean>
+	
+	<!-- Challenge -->
+	
+	<bean id="challenge01" class="acme.entities.challenges.Challenge">
+		<property name="description" value="Description of Challenge 01"/>
+		<property name="title" value="Challenge 01"/>
+		<property name="deadline" value="2029/07/15 17:00"/>
+		<property name="rewardExpert" value="1000€"/>
+		<property name="rewardAverage" value="750€"/>
+		<property name="rewardRookie" value="500€"/>
+	</bean>
+	
+	<bean id="challenge02" class="acme.entities.challenges.Challenge">
+		<property name="description" value="Description of Challenge 02"/>
+		<property name="title" value="Challenge 02"/>
+		<property name="deadline" value="2021/07/5 10:00"/>
+		<property name="rewardExpert" value="2000€"/>
+		<property name="rewardAverage" value="1000€"/>
+		<property name="rewardRookie" value="500€"/>
+	</bean>
+	
+	<bean id="challenge03" class="acme.entities.challenges.Challenge">
+		<property name="description" value="Description of Challenge 03"/>
+		<property name="title" value="Challenge 03"/>
+		<property name="deadline" value="2021/07/20 13:00"/>
+		<property name="rewardExpert" value="500€"/>
+		<property name="rewardAverage" value="200€"/>
+		<property name="rewardRookie" value="100€"/>
+	</bean>
+	
+	<bean id="challenge04" class="acme.entities.challenges.Challenge">
+		<property name="description" value="Description of Challenge 04"/>
+		<property name="title" value="Challenge 04"/>
+		<property name="deadline" value="2015/07/20 13:00"/>
+		<property name="rewardExpert" value="888€"/>
+		<property name="rewardAverage" value="777€"/>
+		<property name="rewardRookie" value="666€"/>
+	</bean>
+	
+	<!-- CreditCard -->
+	
+	 <bean name="creditCard01" class="acme.entities.creditCards.CreditCard">
+		<property name="holderName" value="Rosnops"/>
+		<property name="brandName" value="VISA"/>
+		<property name="number" value="4339001299666117"/>
+		<property name="exMonth" value="01"/>
+		<property name="exYear" value="25"/>
+		<property name="cvv" value="001"/>
+	  </bean>
+	  
+	  <!-- Banner -->
+	  <bean name="banner01" class="acme.entities.banners.Banner">
+		  <property name="picture" value="picture1"/>
+		  <property name="slogan" value="Como dijo Socrates: No es momento para provervios"/>
+		  <property name="targetUrl" value="https://i1.wp.com/www.lagraderia.com/wp-content/uploads/2018/12/no-imagen.jpg?fit=300%2C300"/>
+		  <property name="creditCard">
+			<ref bean="creditCard01"/>
+		  </property>	
+	  </bean> 
+	  <bean name="banner02" class="acme.entities.banners.Banner">
+		  <property name="picture" value="picture2"/>
+		  <property name="slogan" value="A volaar"/>
+		  <property name="targetUrl" value="https://www.youtube.com/watch?v=ou3H5EWiOak"/>
+		  <property name="creditCard">
+			<null/>
+		  </property>	
+	  </bean> 
 </beans>

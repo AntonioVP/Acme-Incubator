@@ -4,7 +4,7 @@ anonymous.vidalBulletin.list.label.title = Titulo
 anonymous.vidalBulletin.list.label.author = Autor
 anonymous.vidalBulletin.list.label.text = Texto
 
-#FORM CREATE
+#FORM
 anonymous.vidalBulletin.form.label.type = Tipo
 anonymous.vidalBulletin.form.label.type.forReal = De Verdad
 anonymous.vidalBulletin.form.label.type.bigNews = Grandes Noticias

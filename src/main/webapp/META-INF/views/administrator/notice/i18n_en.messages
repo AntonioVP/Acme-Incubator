@@ -1,0 +1,11 @@
+administrator.notice.form.label.picture = Picture:
+administrator.notice.form.label.title = Title:
+administrator.notice.form.label.creation = Creation date:
+administrator.notice.form.label.deadline = Deadline date:
+administrator.notice.form.label.body = Body:
+administrator.notice.form.label.link = Link:
+administrator.notice.form.button.return = Return
+
+administrator.notice.list.label.title = Title
+administrator.notice.list.label.creation = Creation date
+administrator.notice.list.label.deadline = Deadline date

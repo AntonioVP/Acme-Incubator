@@ -1,0 +1,19 @@
+#LIST
+
+authenticated.inquiry.list.label.title = Title
+authenticated.inquiry.list.label.creation = Creation moment
+authenticated.inquiry.list.label.deadline = Deadline
+authenticated.inquiry.list.label.minMoney = Minimun amount
+authenticated.inquiry.list.label.maxMoney = Maximun amount
+
+#FORM
+
+authenticated.inquiry.form.label.title = Title:
+authenticated.inquiry.form.label.creation = Creation moment:
+authenticated.inquiry.form.label.deadline = Deadline:
+authenticated.inquiry.form.label.description = Description:
+authenticated.inquiry.form.label.minMoney = Minimun amount:
+authenticated.inquiry.form.label.maxMoney = Maximun amount:
+authenticated.inquiry.form.label.email = Email:
+
+authenticated.inquiry.form.button.return = Return

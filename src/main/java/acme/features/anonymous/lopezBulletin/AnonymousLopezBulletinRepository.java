@@ -12,9 +12,9 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AnonymousLopezBulletinRepository extends AbstractRepository {
 
-	@Query("select f from LopezBulletin f where f.id = ?1")
+	@Query("select l from LopezBulletin l where l.id = ?1")
 	LopezBulletin findLopezBulletinById(int id);
 
-	@Query("select f from LopezBulletin f")
+	@Query("select l from LopezBulletin l")
 	Collection<LopezBulletin> findAllLopezBulletin();
 }
