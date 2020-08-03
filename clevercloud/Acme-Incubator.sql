@@ -553,7 +553,7 @@ CREATE TABLE `user_account` (
 
 LOCK TABLES `user_account` WRITE;
 /*!40000 ALTER TABLE `user_account` DISABLE KEYS */;
-INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$0EE6gRW/yjdBCRkuudAtT.kh2h5CxOu4.lZ5wvuRDKE1sBu9UKLGW','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$1F8RdpfrgUZudvyls84eZ.1EYDhFyxUkUvLr4oJHJD3Do/hsxrrr.','administrator');
+INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$2yXPmr6Le01WNZZvIZThOOlqxDbR/8LJqP2t1v8cWdf55iuStmSpq','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$ImhOl4Ztzc6rJLuS3jT.n.fUhOoD2zv90CPC4yU4qgCCa8IVxYjw2','administrator');
 /*!40000 ALTER TABLE `user_account` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -593,4 +593,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-08-03 14:18:00
+-- Dump completed on 2020-08-03 16:44:17
