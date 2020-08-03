@@ -69,7 +69,7 @@ master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.notice-list = Listar noticias
 master.menu.administrator.shutdown = Parar el sistema
 
-master.menu.administrator.dashboard.show = Tablon de anuncios
+master.menu.administrator.dashboard.show = Estadisticas
 master.menu.administrator.custom-parameter = Parametros personalizables
 
 # master.menu.provider ########################################################
